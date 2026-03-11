@@ -7,8 +7,10 @@ function Home() {
             <Upside className="upside">
                 <LogoImage src={Image} alt="Logo La Cacau" />
                     <div>
+
                         <h2>@</h2>
                         <h2>lacacau_confeitaria</h2>
+                        
                     </div>    
             </Upside>
             <LinksBox className="links">
