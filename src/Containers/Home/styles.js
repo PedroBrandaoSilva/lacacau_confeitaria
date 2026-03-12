@@ -10,17 +10,26 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 70px;
+    gap: 2rem;
     align-items: center;
-    margin: 30% 0 0;
+    margin: 15% 0 0;
     
-
+     @media (min-width: 1024px) {
+       margin: 2% 0 0;
+    }
 `
 
 export const LogoImage = styled.img`
     max-width: 210px;
     border: 4px solid #af7761 ;
     border-radius: 50%;
+
+     @media (min-width: 768px) {
+        max-width: 270px;
+    }
+     @media (min-width: 1024px) {
+        max-width: 230px;
+    }
 `
 export const Upside = styled.div`
 
@@ -40,15 +49,40 @@ export const Upside = styled.div`
 
         h2:first-child{
             font-size: 30px;
+
+             @media (min-width: 768px) {
+                font-size: 40px;
+            }
+            @media (min-width: 1024px) {
+                font-size: 30px;
+            }
         }
+
+        h2:last-child{
+            
+            @media (min-width: 768px) {
+                font-size: 35px;
+            }
+
+             @media (min-width: 1024px) {
+                font-size: 30px;
+            }
+        }
+
+        
 
     }
 `
 export const LinksBox = styled.div`
     display: flex;
+    width: 90%;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
+
+    @media (min-width: 1024px) {
+       width: 50%;
+  }
 `
 export const Link = styled.a`
     width: 100%;
@@ -68,6 +102,12 @@ export const Link = styled.a`
         background-color: #90614f;
         color: #fff;
     }
+
+    @media (min-width: 768px) {
+        font-size: 30px;
+    }
+
+    
     
 `
 
