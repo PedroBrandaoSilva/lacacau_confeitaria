@@ -6,18 +6,18 @@ function Home() {
         <Container>
             <Upside className="upside">
                 <LogoImage src={Image} alt="Logo La Cacau" />
-                    <div>
+                <div>
 
-                        <h2>@</h2>
-                        <h2>lacacau_confeitaria</h2>
-                        
-                    </div>    
+                    <h2>@</h2>
+                    <h2>lacacau_confeitaria</h2>
+
+                </div>
             </Upside>
             <LinksBox className="links">
-                <Link target="__blank" href="./cardapio.pdf">Cardápio de Páscoa</Link>
-                <Link target="__blank" href="https://w.app/lacacau_confeitaria">Atendimento via Whatsapp</Link>
-                <Link target="__blank" href="https://w.app/lacacauconfeitaria">Faça Sua Encomenda</Link>
-                <Link target="__blank" href="https://qro.go.link/enjrM">Quero Delivery</Link>
+                <Link target="_blank" rel="noopener noreferrer" href="./cardapio.pdf">Cardápio de Páscoa</Link>
+                <Link target="_blank" rel="noopener noreferrer" href="https://w.app/lacacau_confeitaria">Atendimento via Whatsapp</Link>
+                <Link target="_blank" rel="noopener noreferrer" href="https://w.app/lacacauconfeitaria">Faça Sua Encomenda</Link>
+                <Link target="_blank" rel="noopener noreferrer" href="https://app.querodelivery.com/la-cacau-confeitaria">Quero Delivery</Link>
             </LinksBox>
         </Container>
     )
