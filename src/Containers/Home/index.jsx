@@ -17,7 +17,7 @@ function Home() {
                 <Link target="_blank" rel="noopener noreferrer" href="./cardapio.pdf">Cardápio de Páscoa</Link>
                 <Link target="_blank" rel="noopener noreferrer" href="https://w.app/lacacau_confeitaria">Atendimento via Whatsapp</Link>
 
-                <Link target="_blank" rel="noopener noreferrer" href="./cardapio/index.html">Faça Sua Encomenda</Link>
+                <Link target="_blank" rel="noopener noreferrer" href="./cardapio/index.html">Cardápio à Pronta Entrega</Link>
 
                 <Link target="_blank" rel="noopener noreferrer" href="https://qro.go.link/enjrM">Quero Delivery</Link>
 
