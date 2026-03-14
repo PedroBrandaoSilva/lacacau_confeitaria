@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -635,4 +636,643 @@
     </div>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - La Cacau Confeitaria</title>
+    <style>
+        :root {
+            --bg-body: #FDFBF7;
+            --bg-card: #FFFFFF;
+            --title-color: #D81B60;
+            --item-name-color: #EC407A;
+            --price-color: #333333;
+            --placeholder-bg: #FCE4EC;
+            --placeholder-border: #F48FB1;
+            --dots-color: #E0E0E0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-body);
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .menu-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            padding: 40px 20px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+        }
+
+        .menu-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .menu-header h1 {
+            font-size: 3em;
+            color: var(--title-color);
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .menu-header p {
+            font-size: 1.1em;
+            color: #777;
+            margin-top: 10px;
+            letter-spacing: 1px;
+        }
+
+        .menu-header button {
+            margin-top: 10px;
+            padding: 10px 25px;
+            font-size: 1em;
+            color: var(--bg-card);
+            background-color: var(--title-color);
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .category {
+            margin-bottom: 50px;
+        }
+
+        .category-header {
+            border-bottom: 2px solid var(--placeholder-bg);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .category-title {
+            font-size: 1.8em;
+            color: var(--title-color);
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .category-subtitle {
+            font-size: 0.9em;
+            color: #666;
+            display: block;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+
+        .items-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .image-placeholder {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            background-color: var(--placeholder-bg);
+            border: 1px solid var(--placeholder-border);
+            border-radius: 12px;
+            flex-shrink: 0;
+        }
+
+        .item-details {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .item-name-price {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            position: relative;
+        }
+
+        .item-name-price::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 5px;
+            border-bottom: 2px dotted var(--dots-color);
+            z-index: 1;
+        }
+
+        .item-name {
+            color: var(--item-name-color);
+            font-weight: 700;
+            font-size: 1rem;
+            background-color: var(--bg-card);
+            padding-right: 8px;
+            z-index: 2;
+            text-transform: uppercase;
+        }
+
+        .item-price {
+            color: var(--price-color);
+            font-weight: 800;
+            font-size: 1rem;
+            background-color: var(--bg-card);
+            padding-left: 8px;
+            z-index: 2;
+            white-space: nowrap;
+        }
+
+        .item-name-description {
+            font-size: 0.85em;
+            color: #888;
+            margin-top: 4px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .menu-container {
+                padding: 30px 15px;
+            }
+
+            .menu-header h1 {
+                font-size: 2.2em;
+            }
+
+            .category-title {
+                font-size: 1.5em;
+            }
+
+            .menu-item {
+                gap: 12px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #f9f9f9;
+            }
+
+            .image-placeholder {
+                width: 80px;
+                height: 80px;
+            }
+
+            .item-name-price::before {
+                display: none;
+            }
+
+            .item-name-price {
+                flex-direction: column;
+                gap: 2px;
+            }
+
+            .item-name {
+                padding: 0;
+                font-size: 0.9rem;
+            }
+
+            .item-price {
+                padding: 0;
+                font-size: 0.95rem;
+                color: var(--title-color);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu-container">
+        <header class="menu-header">
+            <h1>Cardápio</h1>
+            <p>@LACACAU_CONFEITARIA</p>
+            <button onclick="window.location.href='https://lacacauconfeitariateste.netlify.app'">Voltar</button>
+        </header>
+
+        <section class="category">
+            <div class="category-header">
+                <h2 class="category-title">Tortas</h2>
+                <span class="category-subtitle">(QUALQUER FATIA 17,00)</span>
+            </div>
+            <div class="items-grid">
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img37.jpg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">CHOCOLATUDA</span>
+                            <span class="item-price"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img22.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">FERRERO ROCHER</span>
+                            <span class="item-price"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img24.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">NINHO COM NUTELLA</span>
+                            <span class="item-price"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img21.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">TENTAÇÃO</span>
+                            <span class="item-price"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img27.jpg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">SUPREMA</span>
+                            <span class="item-price"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img14.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">OLHO DE SOGRA</span>
+                            <span class="item-price"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img26.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">REDVELVET</span>
+                            <span class="item-price"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img15.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">ESPERANÇA</span>
+                            <span class="item-price"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img4.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">MATILDA</span>
+                            <span class="item-price">20,00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img1.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">CHEESECAKE DE OREO</span>
+                            <span class="item-price"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img9.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">CHEESECAKE DE MORANGO</span>
+                            <span class="item-price"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img2.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">CHEESECAKE DE LIMÃO</span>
+                            <span class="item-price"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="category">
+            <div class="category-header">
+                <h2 class="category-title">Doces e Sobremesas</h2>
+            </div>
+            <div class="items-grid">
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img10.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">PASTELZINHO DE NINHO</span>
+                            <span class="item-price">6,00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img23.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">DOCINHO</span>
+                            <span class="item-price">2,00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img25.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">TARTELET</span>
+                            <span class="item-price">8,00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img41.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">DOSE DA FELICIDADE</span>
+                            <span class="item-price">20,00</span>
+                        </div>
+                        <div class="item-name-description">Uma dose de felicidade em forma de sobremesa</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img18.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">PAVÊ</span>
+                            <span class="item-price">8,00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img32.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">PUDIM</span>
+                            <span class="item-price">7,00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img20.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">BROWNIE RECHEADO</span>
+                            <span class="item-price">8,00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img36.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">CESTINHA GOURMET</span>
+                            <span class="item-price">17,00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img8.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">COPINHO RECHEADO</span>
+                            <span class="item-price">9,00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img19.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">CONE TRUFADO</span>
+                            <span class="item-price">10,00 / 12,00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img43.jpg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">TRUFA</span>
+                            <span class="item-price">5,00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="category">
+            <div class="category-header">
+                <h2 class="category-title">Salgados</h2>
+            </div>
+            <div class="items-grid">
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img17.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">TORTA DE FRANGO</span>
+                            <span class="item-price">10,00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img12.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">EMPADÃO</span>
+                            <span class="item-price">10,00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img6.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">PASTEL DE FORNO</span>
+                            <span class="item-price">8,00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img35.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">ESFIHA CARNE</span>
+                            <span class="item-price">8,00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img38.jpg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">ESFIHA FRANGO</span>
+                            <span class="item-price">8,00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img11.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">MISTO</span>
+                            <span class="item-price">8,00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img5.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">JOELHO</span>
+                            <span class="item-price">8,00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img34.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">CONE RECHEADO</span>
+                            <span class="item-price">12,00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="category">
+            <div class="category-header">
+                <h2 class="category-title">Bolos</h2>
+            </div>
+            <div class="items-grid">
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img16.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">BOLO VULCÃO 400G</span>
+                            <span class="item-price">22,00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img40.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">BOLO VULCÃO 800G</span>
+                            <span class="item-price">40,00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img7.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">ESCONDIDINHO DE BROWNIE</span>
+                            <span class="item-price">10,00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img13.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">TORTA NO POTE</span>
+                            <span class="item-price">12,00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="category">
+            <div class="category-header">
+                <h2 class="category-title">Bebidas</h2>
+            </div>
+            <div class="items-grid">
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img30.jpg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">REFRIGERANTE EM LATA</span>
+                            <span class="item-price">6,00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img28.jpg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">COCA PET</span>
+                            <span class="item-price">3,50</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img29.jpg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">SUCO DELVALLE</span>
+                            <span class="item-price">5,50</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img31.jpg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">COCA 1L</span>
+                            <span class="item-price">9,00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img39.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">CHOCOLATE QUENTE</span>
+                            <span class="item-price">15,00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="image-placeholder" src="./assets/img39.jpeg" alt="Foto">
+                    <div class="item-details">
+                        <div class="item-name-price">
+                            <span class="item-name">CAPPUCCINO</span>
+                            <span class="item-price">12,00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+>>>>>>> 69e7b8995b619502c588befef206c5d91765d6c5
 </html>
