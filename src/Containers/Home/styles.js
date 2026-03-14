@@ -4,13 +4,14 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
+    height: 100vh;
     display: flex;
-    background-color: #f1f3e1;
+    background-color: #f5e0e2;
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
     align-items: center;
-    padding: 15% 0 0;
+    padding: 15% 0 5rem;
     
      @media (min-width: 768px) {
        padding: 2rem 0 5rem;
