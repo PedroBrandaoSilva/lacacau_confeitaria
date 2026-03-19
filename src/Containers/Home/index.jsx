@@ -15,7 +15,7 @@ function Home() {
             </Upside>
             <LinksBox className="links">
                 <Link target="_blank" rel="noopener noreferrer" href="./cardapio.pdf">Cardápio de Páscoa</Link>
-                <Link target="_blank" rel="noopener noreferrer" href=https://wa.me/5575988471630?text=Ol%C3%A1!Gostaria%20de%20fazer%20um%20pedido!">Atendimento via Whatsapp</Link>
+                <Link target="_blank" rel="noopener noreferrer" href="https://wa.me/5575988471630?text=Ol%C3%A1!Gostaria%20de%20fazer%20um%20pedido!">Atendimento via Whatsapp</Link>
 
                 <Link href="./cardapio/index.html">Cardápio à Pronta Entrega</Link>
 
